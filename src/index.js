@@ -5,7 +5,7 @@ import mysql2 from "mysql2"
 
 const { DB_HOST, DB_NAME, DB_USER, DB_PASSWORD } = process.env
 
-const app = express()
+const app = express();
 const port = 3333
 
 
