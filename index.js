@@ -28,7 +28,7 @@ app.get("/", (request, response)=> {
 
 app.post("/login",(request, response) =>{
     const { email, password } = request.body.user
-    const selectCommand = "SELECT * FROM pedrohenrique_02mb WHERE email = ?"
+    const selectCommand = "SELECT * FROM giovannamigliorini_02mb WHERE email = ?"
 
     database.query(selectCommand, [email], (error, user) =>{
         if(error){
@@ -52,7 +52,7 @@ app.post("/cadastrar", (request, response) =>{
 
 
     const insertCommand = `
-        INSERT INTO pedrohenrique_02mb(name, email, password)
+        INSERT INTO giovannamigliorini_02mb (name, email, password)
         VALUES (?, ?, ?)
     `
 
